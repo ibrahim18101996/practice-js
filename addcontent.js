@@ -1,4 +1,14 @@
-var today = new Date();
+var name=String;
+var agg=Number;
+var phone=Number;
+confirm('are you sure you eant to git in this page');
+
+prompt('add your name');
+prompt('add your age');
+prompt('add your phone number');
+    
+    
+    var today = new Date();
 var hourNow = today.getHours();
 
 var greeting;
