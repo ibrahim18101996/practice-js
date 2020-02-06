@@ -17,3 +17,4 @@ function creataGreeting(){
      return greeting;
 
 }
+creataGreeting();
