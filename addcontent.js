@@ -1,26 +1,19 @@
-var name=String;
-var agg=Number;
-var phone=Number;
-confirm('are you sure you eant to git in this page');
 
-prompt('add your name');
-prompt('add your age');
-prompt('add your phone number');
-    
-    
-    var today = new Date();
-var hourNow = today.getHours();
+function creataGreeting(){
+    var hourNow = prompt('enter anumber between 0-24');
+    var greeting;
+    if (hourNow>18 && hourNow <= 24) {
+        greeting='good morning';
+    } 
+    else if (hourNow>12 && hourNow <= 18) {
+        greeting="good afternoon";
+    } 
+    else if (hourNow>0 && hourNow <=12) {
+        greeting='good evning';
+    }
+     else {
+        greeting='try another value';
+    }
+     return greeting;
 
-var greeting;
-
-if ( hourNow > 18) {
-    greeting = 'good evening!   ';
 }
-else if (hourNow > 12){
-    greeting = 'good afternoon';
-} else if (hourNow > 0){
-    greeting = 'good morning';
-} else {
-    greeting = 'welcome';
-}
-document.write('<h3>' + greeting + '</h3>')
